@@ -1,0 +1,50 @@
+# HabituAll — local ignore rules
+# System design: ARCHITECTURE.md | Quick start: README.md
+# Update this file when adding secrets, build artifacts, or local-only data paths.
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+dist-ssr/
+*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment & secrets — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.dev.vars
+.wrangler/
+
+# Test & coverage
+coverage/
+
+# Editor & OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local encrypted vault exports (user data)
+*.vault-export
+
+# Local DB / adapter scratch (when IndexedDB export tools are added)
+*.idb-export
